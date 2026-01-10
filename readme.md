@@ -10,14 +10,16 @@
 ## Steps to run
 
 1. Checkout repo `git clone`
-2. Rename `sample.env` to `.env` and fill in the information
+2. Create a `.streamlit` folder with a `secrets.toml` file and paste the contents of the filled out `sample.env` file inside of it.
 3. Create a new python environment `python -mvenv .venv`
-4. Activate environment `source .venv\bin\activate`
+4. Activate environment `source .venv/Scripts/activate`
 5. Install packages `pip install -r requirements.txt`
 6. Generate password `python generate_password.py`
 7. Run database test `python test_render_database.py`
 8. Populate database `python populate_db.py`
 9. Run Streamlit app `streamlit run streamlit_app.py`
+10. Log in with the password you used for generating the hash earlier.
+11. Use the app.
 
 
 ## How create hashed password
